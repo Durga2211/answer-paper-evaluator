@@ -1,0 +1,8 @@
+paddlepaddle
+paddleocr
+fastapi
+uvicorn
+python-multipart
+google-cloud-vision
+opencv-python-headless
+Pillow

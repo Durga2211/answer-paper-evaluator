@@ -1,0 +1,254 @@
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815361374-test_text.png
+Error: Command failed: python3 /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815361374-test_text.png
+Traceback (most recent call last):
+  File "/Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py", line 3, in <module>
+    import pytesseract
+ModuleNotFoundError: No module named 'pytesseract'
+
+Stdout: 
+Stderr: Traceback (most recent call last):
+  File "/Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py", line 3, in <module>
+    import pytesseract
+ModuleNotFoundError: No module named 'pytesseract'
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815456971-test_text.png
+Error: undefined
+Stdout: Stock uses LIFO, Push operation adds to top, pop removes from t
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815456971-test_text.png
+Extracted Text Length: 63
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815600462-WhatsApp Image 2026-03-06 at 21.52.29.jpeg
+Error: undefined
+Stdout: LAA
+
+ae
+ee
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815600462-WhatsApp Image 2026-03-06 at 21.52.29.jpeg
+Extracted Text Length: 10
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815759651-WhatsApp Image 2026-03-06 at 12.05.27.jpeg
+Error: undefined
+Stdout: eer Ta
+Ly 7 Aybar iyrr
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815759651-WhatsApp Image 2026-03-06 at 12.05.27.jpeg
+Extracted Text Length: 22
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815806977-WhatsApp Image 2026-03-06 at 12.17.56.jpeg
+Error: undefined
+Stdout: 
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815806977-WhatsApp Image 2026-03-06 at 12.17.56.jpeg
+Extracted Text Length: 0
+OCR Status: FAILED
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815835343-WhatsApp Image 2026-03-06 at 12.17.56.jpeg
+Error: undefined
+Stdout: 
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815835343-WhatsApp Image 2026-03-06 at 12.17.56.jpeg
+Extracted Text Length: 0
+OCR Status: FAILED
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772815852530-WhatsApp Image 2026-03-06 at 12.08.33.jpeg
+Error: undefined
+Stdout: Sas eT.
+
+al
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772815852530-WhatsApp Image 2026-03-06 at 12.08.33.jpeg
+Extracted Text Length: 11
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772816016297-WhatsApp Image 2026-03-06 at 12.05.27.jpeg
+Error: undefined
+Stdout: eer Ta
+Ly 7 Aybar iyrr
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772816016297-WhatsApp Image 2026-03-06 at 12.05.27.jpeg
+Extracted Text Length: 22
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772816064012-WhatsApp Image 2026-03-06 at 21.52.29.jpeg
+Error: undefined
+Stdout: LAA
+
+ae
+ee
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772816064012-WhatsApp Image 2026-03-06 at 21.52.29.jpeg
+Extracted Text Length: 10
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1772816307930-WhatsApp Image 2026-03-06 at 22.28.03.jpeg
+Error: undefined
+Stdout: oy
+ARE
+
+zaNer
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1772816307930-WhatsApp Image 2026-03-06 at 22.28.03.jpeg
+Extracted Text Length: 13
+OCR Status: SUCCESS
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1773412636908-WhatsApp Image 2026-03-13 at 20.06.17.jpeg /Applications/code/answer-evaluator/backend/uploads/1773412636910-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+Error: undefined
+Stdout: erie
+pies
+Be Factat Pere
+
+Stderr: ========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1773412636908-WhatsApp Image 2026-03-13 at 20.06.17.jpeg
+Extracted Text Length: 24
+OCR Status: SUCCESS
+====================================
+========== OCR EXTRACTION ==========
+Image Path: /Applications/code/answer-evaluator/backend/uploads/1773412636910-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+Extracted Text Length: 0
+OCR Status: FAILED
+====================================
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1773414108378-WhatsApp Image 2026-03-13 at 20.06.17.jpeg /Applications/code/answer-evaluator/backend/uploads/1773414108381-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+Error: undefined
+Stdout: Houlpi does midi phaier spakerard mow hopertrs orahod nto di siciai dvion and imi - x ya. YA 2emn 5 xe 2.-uaten hi b (oNogtahopent/, ma)... hegdidandamok L 1 RoCondiomalopetusaS 1xt nxo 4iwondreaten Hhan LY wo ow xyFruke- areaertan on eyalto Y hm B een thano ea o. erent. koenerent. spentonst. Rdndha e/e. ha votei aned oad t an al Mearehuone Yety hesau Mod by one and hat umnenoMsi
+
+tpat-. s. xa X- dehh xytmlddrowesaudisdayd Xatnvdedron and eutpredagd xfethdvidid hoandhema1 -dreptoed. 2 ogsouater than L then X nesmed8 fa Rs1eane a dasned o.8p hapda cite acpiograin o and theavec dd crumderene o thedde Ren thradhi. ontmainc constoat/B int. areamerence. Proneh/enten ihrdfanol thn.-crdekg Stan@pda Aron
+
+Stderr: /Applications/code/answer-evaluator/backend/.venv_paddle/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.1.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+[33mChecking connectivity to the model hosters, this may take a while. To bypass this check, set `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` to `True`.[0m
+/Applications/code/answer-evaluator/backend/.venv_paddle/lib/python3.12/site-packages/paddle/utils/cpp_extension/extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/UVDoc`.[0m
+[32mCreating model: ('PP-LCNet_x1_0_textline_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-LCNet_x1_0_textline_ori`.[0m
+[32mCreating model: ('PP-OCRv5_server_det', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-OCRv5_server_det`.[0m
+[32mCreating model: ('en_PP-OCRv5_mobile_rec', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/en_PP-OCRv5_mobile_rec`.[0m
+[OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773414108378-WhatsApp Image 2026-03-13 at 20.06.17.jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+Houlpi does midi phaier spakerard mow hopertrs orahod nto di siciai dvion and imi - x ya. YA 2emn 5 xe 2.-uaten hi b (oNogtahopent/, ma)... hegdidandamok L 1 RoCondiomalopetusaS 1xt nxo 4iwondreaten Hhan LY wo ow xyFruke- areaertan on eyalto Y hm B een thano ea o. erent. koenerent. spentonst. Rdndha e/e. ha votei aned oad t an al Mearehuone Yety hesau Mod by one and hat umnenoMsi
+================================
+
+[OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773414108381-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+tpat-. s. xa X- dehh xytmlddrowesaudisdayd Xatnvdedron and eutpredagd xfethdvidid hoandhema1 -dreptoed. 2 ogsouater than L then X nesmed8 fa Rs1eane a dasned o.8p hapda cite acpiograin o and theavec dd crumderene o thedde Ren thradhi. ontmainc constoat/B int. areamerence. Proneh/enten ihrdfanol thn.-crdekg Stan@pda Aron
+================================
+
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1773587319965-WhatsApp Image 2026-03-13 at 20.06.17.jpeg /Applications/code/answer-evaluator/backend/uploads/1773587319967-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+Error: undefined
+Stdout: Houlpi does midi phaier spakerard mow hopertrs orahod nto di siciai dvion and imi - x ya. YA 2emn 5 xe 2.-uaten hi b (oNogtahopent/, ma)... hegdidandamok L 1 RoCondiomalopetusaS 1xt nxo 4iwondreaten Hhan LY wo ow xyFruke- areaertan on eyalto Y hm B een thano ea o. erent. koenerent. spentonst. Rdndha e/e. ha votei aned oad t an al Mearehuone Yety hesau Mod by one and hat umnenoMsi
+
+tpat-. s. xa X- dehh xytmlddrowesaudisdayd Xatnvdedron and eutpredagd xfethdvidid hoandhema1 -dreptoed. 2 ogsouater than L then X nesmed8 fa Rs1eane a dasned o.8p hapda cite acpiograin o and theavec dd crumderene o thedde Ren thradhi. ontmainc constoat/B int. areamerence. Proneh/enten ihrdfanol thn.-crdekg Stan@pda Aron
+
+Stderr: /Applications/code/answer-evaluator/backend/.venv_paddle/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.1.0)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+[33mChecking connectivity to the model hosters, this may take a while. To bypass this check, set `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` to `True`.[0m
+/Applications/code/answer-evaluator/backend/.venv_paddle/lib/python3.12/site-packages/paddle/utils/cpp_extension/extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/UVDoc`.[0m
+[32mCreating model: ('PP-LCNet_x1_0_textline_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-LCNet_x1_0_textline_ori`.[0m
+[32mCreating model: ('PP-OCRv5_server_det', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/PP-OCRv5_server_det`.[0m
+[32mCreating model: ('en_PP-OCRv5_mobile_rec', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/durgaprakash/.paddlex/official_models/en_PP-OCRv5_mobile_rec`.[0m
+[OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773587319965-WhatsApp Image 2026-03-13 at 20.06.17.jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+Houlpi does midi phaier spakerard mow hopertrs orahod nto di siciai dvion and imi - x ya. YA 2emn 5 xe 2.-uaten hi b (oNogtahopent/, ma)... hegdidandamok L 1 RoCondiomalopetusaS 1xt nxo 4iwondreaten Hhan LY wo ow xyFruke- areaertan on eyalto Y hm B een thano ea o. erent. koenerent. spentonst. Rdndha e/e. ha votei aned oad t an al Mearehuone Yety hesau Mod by one and hat umnenoMsi
+================================
+
+[OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773587319967-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+tpat-. s. xa X- dehh xytmlddrowesaudisdayd Xatnvdedron and eutpredagd xfethdvidid hoandhema1 -dreptoed. 2 ogsouater than L then X nesmed8 fa Rs1eane a dasned o.8p hapda cite acpiograin o and theavec dd crumderene o thedde Ren thradhi. ontmainc constoat/B int. areamerence. Proneh/enten ihrdfanol thn.-crdekg Stan@pda Aron
+================================
+
+
+
+[OCR API CALL]
+Args: /Applications/code/answer-evaluator/backend/scripts/ocr_extractor.py /Applications/code/answer-evaluator/backend/uploads/1773587713165-WhatsApp Image 2026-03-13 at 20.06.17.jpeg /Applications/code/answer-evaluator/backend/uploads/1773587713167-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+Error: undefined
+Stdout: ae Ree eee Se Sos enees see ee I A “tr oo js: ' | ’ opercttny SP dash etx iD AvBowtie opinions Chat t, f) | add? lfon Subbry chin, wu Heltiakiem, dtviota ood reveahedey ~~ i [x2 viz abdttgglll ood —— Va a a + i ee Le - ee | ll a 1 r - —— —— 7 ang a F ov o vel ha sa La a - _! Pes tue | ey wl. | = —_—n Fi 7
+
+| | abttonmet opeto boul ss ~— X+=¥ th v q | ox-2¥ 4. ‘ = a ae a ian q 7 Pe ae Be owe to pad a a _ _ | oe _ piog tov) i. Fs SR bea 4 aes TOE - i | th non -| — — in ayeg a el _ _ | Prd (a i “a a ax __ | dj |
+
+Stderr: [OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773587713165-WhatsApp Image 2026-03-13 at 20.06.17.jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+ae Ree eee Se Sos enees see ee I A “tr oo js: ' | ’ opercttny SP dash etx iD AvBowtie opinions Chat t, f) | add? lfon Subbry chin, wu Heltiakiem, dtviota ood reveahedey ~~ i [x2 viz abdttgglll ood —— Va a a + i ee Le - ee | ll a 1 r - —— —— 7 ang a F ov o vel ha sa La a - _! Pes tue | ey wl. | = —_—n Fi 7
+================================
+
+[OCR] Processing: /Applications/code/answer-evaluator/backend/uploads/1773587713167-WhatsApp Image 2026-03-13 at 20.06.17 (1).jpeg
+
+========== OCR OUTPUT ==========
+Extracted Text:
+| | abttonmet opeto boul ss ~— X+=¥ th v q | ox-2¥ 4. ‘ = a ae a ian q 7 Pe ae Be owe to pad a a _ _ | oe _ piog tov) i. Fs SR bea 4 aes TOE - i | th non -| — — in ayeg a el _ _ | Prd (a i “a a ax __ | dj |
+================================
+
+
+

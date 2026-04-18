@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Environment
+.env
+
+# Project specific
+backend/uploads/
+backend/data/results/
+backend/data/*.json
+!backend/data/exams.json
+frontend/dist/

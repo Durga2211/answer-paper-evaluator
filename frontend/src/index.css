@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --border-primary: #000000;
+  --accent: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] font-mono selection:bg-black selection:text-white;
+    background-image:
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+@layer components {
+  .retro-card {
+    @apply bg-white border-2 border-black p-6 shadow-[8px_8px_0px_0px_#000] transition-all;
+  }
+
+  .retro-card:hover {
+    @apply shadow-[4px_4px_0px_0px_#000] translate-x-[4px] translate-y-[4px];
+  }
+
+  .btn-primary {
+    @apply bg-black text-white px-8 py-3 font-bold border-2 border-black hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .btn-secondary {
+    @apply bg-white text-black px-8 py-3 font-bold border-2 border-black hover:bg-black hover:text-white transition-all flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .input-field {
+    @apply w-full bg-white border-2 border-black px-4 py-3 font-mono focus:outline-none focus:ring-0 placeholder:text-gray-400;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-4 px-6 py-4 border-b-2 border-black transition-all hover:bg-black hover:text-white cursor-pointer font-bold;
+  }
+
+  .sidebar-item-active {
+    @apply bg-black text-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white border-l-2 border-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-black border-2 border-black;
+}

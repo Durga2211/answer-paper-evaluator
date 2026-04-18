@@ -1,0 +1,889 @@
+[
+  {
+    "examId": "sample-exam-001",
+    "subject": "Electrical Circuits 101",
+    "createdAt": "2026-02-18T15:00:00.000Z",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "State and explain Ohm's Law.",
+        "modelAnswer": "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points. Introducing the constant of proportionality, the resistance, one arrives at the usual mathematical equation that describes this relationship: I = V / R.",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "proportional",
+            "weight": 2
+          },
+          {
+            "word": "voltage",
+            "weight": 1
+          },
+          {
+            "word": "current",
+            "weight": 1
+          },
+          {
+            "word": "resistance",
+            "weight": 1
+          },
+          {
+            "word": "V = IR",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "qid": "Q2",
+        "title": "Define Kirchhoff's Voltage Law (KVL).",
+        "modelAnswer": "Kirchhoff's Voltage Law (KVL) states that the algebraic sum of all voltages around any closed loop in a circuit is equal to zero. This is a consequence of the principle of conservation of energy.",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "sum",
+            "weight": 1
+          },
+          {
+            "word": "voltages",
+            "weight": 1
+          },
+          {
+            "word": "closed loop",
+            "weight": 2
+          },
+          {
+            "word": "zero",
+            "weight": 1
+          },
+          {
+            "word": "conservation of energy",
+            "weight": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "examId": "d90a77af-f7da-44f8-8081-67b22480e339",
+    "subject": "dsa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "stacks",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:21:12.950Z"
+  },
+  {
+    "examId": "945d2e9b-1f0e-496f-be25-23f06b8ead97",
+    "subject": "",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "",
+        "modelAnswer": "",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:21:13.800Z"
+  },
+  {
+    "examId": "1ae6463d-3b52-4fe6-8456-742f2794313c",
+    "subject": "dsa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "explain stacks",
+        "modelAnswer": "stacks work on lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:25:36.829Z"
+  },
+  {
+    "examId": "8751dd40-b7bb-4065-8d2c-715448d6ba63",
+    "subject": "dsa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "how does stacks works",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:33:28.932Z"
+  },
+  {
+    "examId": "0d4e0227-6fd0-4a7c-ae10-a7cf85e5734b",
+    "subject": "dsa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "how does stacks work",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:34:57.748Z"
+  },
+  {
+    "examId": "93855603-fda6-49c7-9286-7f5107b630bc",
+    "subject": "dsa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "how does stacks works",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:54:25.481Z"
+  },
+  {
+    "examId": "05a5b2e2-4756-4171-964c-10857a30e97b",
+    "subject": "dsaaa",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "stacks",
+        "modelAnswer": "lifo",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "lifo",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T15:55:41.479Z"
+  },
+  {
+    "examId": "c9d3111c-a5f9-4fa8-a070-35e06ff67d01",
+    "subject": "aec",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "what is current mirror",
+        "modelAnswer": "mirrored current is current mirror",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "current",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T16:13:29.053Z"
+  },
+  {
+    "examId": "a3938104-6469-4f51-b272-0c688e99c199",
+    "subject": "physics",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "Explain Newton's second law of..",
+        "modelAnswer": "it is about force and mass.",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T16:36:05.042Z"
+  },
+  {
+    "examId": "8b09f018-f392-4d1a-a9cf-c6d62709a25a",
+    "subject": "physicsss",
+    "questions": [
+      {
+        "qid": "Q1",
+        "title": "ohms law",
+        "modelAnswer": "v=ir",
+        "maxMarks": 10,
+        "keywords": [
+          {
+            "word": "v r i",
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-02-18T16:46:21.578Z"
+  },
+  {
+    "examId": "0e38205a-9cd8-4995-b687-dd516bab8e4f",
+    "examName": "dsa final",
+    "subjectCode": "123",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "it works on LIFO",
+    "createdAt": "2026-02-18T17:02:39.740Z"
+  },
+  {
+    "examId": "29423bba-e5a3-414e-a6ca-904e0b813886",
+    "examName": "dsa fall",
+    "subjectCode": "21",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "it works on lifo",
+    "createdAt": "2026-02-18T17:08:32.603Z"
+  },
+  {
+    "examId": "9cd7a89b-1962-4b2d-b8a7-c8e7309aa9fe",
+    "examName": "aec fall",
+    "subjectCode": "21",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "a transistor-based circuit component (usually a current mirror) used in place of a resistor to provide high AC impedance while maintaining low DC voltage drop, primarily in integrated circuits",
+    "createdAt": "2026-02-18T17:20:10.920Z"
+  },
+  {
+    "examId": "ad630afd-6bbd-468e-ae82-c82e86f9bca3",
+    "examName": "aec falll",
+    "subjectCode": "21",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "a transistor-based circuit component (usually a current mirror) used in place of a resistor to provide high AC impedance while maintaining low DC voltage drop, primarily in integrated circuits.",
+    "createdAt": "2026-02-18T17:21:46.081Z"
+  },
+  {
+    "examId": "3283b486-373a-4fa2-b593-b559e617bd67",
+    "examName": "aec falll 20025",
+    "subjectCode": "21",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "a  transistor-based circuit component (usually a current mirror) used in place of a resistor to provide high AC impedance while maintaining low DC voltage drop, primarily in integrated circuits\n",
+    "createdAt": "2026-02-18T17:23:43.583Z"
+  },
+  {
+    "examId": "8f8ee78c-8af9-468f-9bb7-15e0163b493f",
+    "examName": "aec evaluation",
+    "subjectCode": "21",
+    "date": "2026-02-18",
+    "totalMarks": 100,
+    "passingMarks": 40,
+    "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+    "createdAt": "2026-02-18T17:45:29.794Z"
+  },
+  {
+    "examId": "a9f48f28-6bad-4cc7-b51d-657e0cc9aee4",
+    "examName": "aec testing",
+    "subjectCode": "aec 21",
+    "questions": [
+      {
+        "questionNumber": "6b",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-19T05:23:53.539Z"
+  },
+  {
+    "examId": "d7bddfda-d17e-42d0-8c71-5331ab70e575",
+    "examName": "aecc",
+    "subjectCode": "2122",
+    "questions": [
+      {
+        "questionNumber": "6b",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T05:30:19.279Z"
+  },
+  {
+    "examId": "04b7fcaa-597f-4abd-b274-18f5a67c1d77",
+    "examName": "aec 21",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "6b",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T05:33:20.939Z"
+  },
+  {
+    "examId": "78558fbc-8dd2-4489-941e-27e4654a9eaa",
+    "examName": "aec test",
+    "subjectCode": "aec-21",
+    "questions": [
+      {
+        "questionNumber": "6b",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-19T05:38:02.135Z"
+  },
+  {
+    "examId": "518a39cb-868b-4775-a51b-21593ef14db4",
+    "examName": "aecc-test",
+    "subjectCode": "aec-2122",
+    "questions": [
+      {
+        "questionNumber": "6b",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-19T05:44:45.615Z"
+  },
+  {
+    "examId": "9f116973-171c-46f7-8269-60cd8c3c2951",
+    "examName": "aeec",
+    "subjectCode": "aec-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T05:57:19.472Z"
+  },
+  {
+    "examId": "ca4c0369-9d01-4b52-81d3-3c99a958a6e6",
+    "examName": "aec",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "Active loads help in increasing the voltage gain, i.e MOSFET acts a like a resistor with voltage across it just sufficient to keep it in saturation.",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T06:02:16.433Z"
+  },
+  {
+    "examId": "a55cb69e-966d-454d-90de-d513df133922",
+    "examName": "dsa-test",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "code for linked list insertion",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\n// Define node structure\nstruct Node {\n    int data;\n    struct Node* next;\n};\n\n// Create new node\nstruct Node* createNode(int value) {\n    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));\n    newNode->data = value;\n    newNode->next = NULL;\n    return newNode;\n}\n\n// Insert at beginning\nstruct Node* insertAtBeginning(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n    newNode->next = head;\n    return newNode;\n}\n\n// Insert at end\nstruct Node* insertAtEnd(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n\n    if (head == NULL)\n        return newNode;\n\n    struct Node* temp = head;\n    while (temp->next != NULL)\n        temp = temp->next;\n\n    temp->next = new\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T06:14:22.628Z"
+  },
+  {
+    "examId": "2ff7a724-ba64-47f4-b510-1bdc26d3a1cd",
+    "examName": "dsa-testing",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "linked list insertion code",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\n// Define node structure\nstruct Node {\n    int data;\n    struct Node* next;\n};\n\n// Create new node\nstruct Node* createNode(int value) {\n    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));\n    newNode->data = value;\n    newNode->next = NULL;\n    return newNode;\n}\n\n// Insert at beginning\nstruct Node* insertAtBeginning(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n    newNode->next = head;\n    return newNode;\n}\n\n// Insert at end\nstruct Node* insertAtEnd(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n\n    if (head == NULL)\n        return newNode;\n\n    struct Node* temp = head;\n    while (temp->next != NULL)\n        temp = temp->next;\n\n    temp->next = newNode;\n    return head;\n}\n\n// Insert at position (1-based index)\nstruct Node* insertAtPosition(struct Node* head, int value, int pos) {\n    if (pos == 1)\n        return insertAtBeginning(head, value);\n\n    struct Node* newNode = createNode(value);\n    struct Node* temp = head;\n\n    for (int i = 1; i < pos - 1 && temp != NULL; i++)\n        temp = temp->next;\n\n    if (temp == NULL) {\n        printf(\"Position out of range\\n\");\n        return head;\n    }\n\n    newNode->next = temp->next;\n    temp->next = newNode;\n    return head;\n}\n\n// Display linked list\nvoid display(struct Node* head) {\n    struct Node* temp = head;\n    while (temp != NULL) {\n        printf(\"%d -> \", temp->data);\n        temp = temp->next;\n    }\n    printf(\"NULL\\n\");\n}\n\n// Main function\nint main() {\n    struct Node* head = NULL;\n\n    head = insertAtBeginning(head, 10);\n    head = insertAtEnd(head, 20);\n    head = insertAtEnd(head, 30);\n    head = insertAtPosition(head, 25, 3);\n\n    display(head);\n\n    return 0;\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T06:15:32.523Z"
+  },
+  {
+    "examId": "4877876f-a315-4827-bc18-25101512d1e8",
+    "examName": "dsa-testing2",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "how does stacks works",
+        "modelAnswer": "it works on LIFO",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-19T06:16:50.230Z"
+  },
+  {
+    "examId": "28054fb4-8faf-44b1-8d3d-bfb6bfa8831e",
+    "examName": "dsatest",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "how does stacks works",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-19T06:20:38.415Z"
+  },
+  {
+    "examId": "d1c62566-f3b6-4f96-a616-a8a774d71121",
+    "examName": "dsa",
+    "subjectCode": "dsa-2121",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "how does stacks work",
+        "modelAnswer": "it works on lifo",
+        "maxMarks": 11
+      }
+    ],
+    "createdAt": "2026-02-20T16:16:59.289Z"
+  },
+  {
+    "examId": "9cea5a21-3ab1-47f7-af8b-b101f14bc4e2",
+    "examName": "dsa code test",
+    "subjectCode": "dsa21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "code ",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\n// Define node structure\nstruct Node {\n    int data;\n    struct Node* next;\n};\n\n// Create new node\nstruct Node* createNode(int value) {\n    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));\n    newNode->data = value;\n    newNode->next = NULL;\n    return newNode;\n}\n\n// Insert at beginning\nstruct Node* insertAtBeginning(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n    newNode->next = head;\n    return newNode;\n}\n\n// Insert at end\nstruct Node* insertAtEnd(struct Node* head, int value) {\n    struct Node* newNode = createNode(value);\n\n    if (head == NULL)\n        return newNode;\n\n    struct Node* temp = head;\n    while (temp->next != NULL)\n        temp = temp->next;\n\n    temp->next = newNode;\n    return head;\n}\n\n// Insert at position (1-based index)\nstruct Node* insertAtPosition(struct Node* head, int value, int pos) {\n    if (pos == 1)\n        return insertAtBeginning(head, value);\n\n    struct Node* newNode = createNode(value);\n    struct Node* temp = head;\n\n    for (int i = 1; i < pos - 1 && temp != NULL; i++)\n        temp = temp->next;\n\n    if (temp == NULL) {\n        printf(\"Position out of range\\n\");\n        return head;\n    }\n\n    newNode->next = temp->next;\n    temp->next = newNode;\n    return head;\n}\n\n// Display linked list\nvoid display(struct Node* head) {\n    struct Node* temp = head;\n    while (temp != NULL) {\n        printf(\"%d -> \", temp->data);\n        temp = temp->next;\n    }\n    printf(\"NULL\\n\");\n}\n\n// Main function\nint main() {\n    struct Node* head = NULL;\n\n    head = insertAtBeginning(head, 10);\n    head = insertAtEnd(head, 20);\n    head = insertAtEnd(head, 30);\n    head = insertAtPosition(head, 25, 3);\n\n    display(head);\n\n    return 0;\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T16:18:44.846Z"
+  },
+  {
+    "examId": "8444a4e8-a554-486c-835c-a886a6ca2eaf",
+    "examName": "dsatest2",
+    "subjectCode": "dsa-212121",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "display",
+        "modelAnswer": "void display(struct Node* head) {\n    struct Node* temp = head;\n\n    while (temp != NULL) {\n        printf(\"%d <-> \", temp->data);\n        temp = temp->next;\n    }\n    printf(\"NULL\\n\");\n}",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-20T16:25:54.754Z"
+  },
+  {
+    "examId": "efc47c40-71a6-459e-bfb6-e44fcf8039d4",
+    "examName": "dsaqp",
+    "subjectCode": "dsaqp-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "deleting of circular linked list",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node* next;\n};\n\nstruct Node* head = NULL;\n\n// Delete first node\nvoid deleteAtBeginning() {\n    if (head == NULL) {\n        printf(\"List is empty\\n\");\n        return;\n    }\n\n    struct Node* temp = head;\n\n    // If only one node\n    if (head->next == head) {\n        head = NULL;\n        free(temp);\n        return;\n    }\n\n    struct Node* last = head;\n    while (last->next != head)\n        last = last->next;\n\n    head = head->next;\n    last->next = head;\n    free(temp);\n}\n\n// Delete last node\nvoid deleteAtEnd() {\n    if (head == NULL) {\n        printf(\"List is empty\\n\");\n        return;\n    }\n\n    // Only one node\n    if (head->next == head) {\n        free(head);\n        head = NULL;\n        return;\n    }\n\n    struct Node* temp = head;\n    struct Node* prev = NULL;\n\n    while (temp->next != head) {\n        prev = temp;\n        temp = temp->next;\n    }\n\n    prev->next = head;\n    free(temp);\n}\n\n// Delete node with given value\nvoid deleteByValue(int key) {\n    if (head == NULL) {\n        printf(\"List is empty\\n\");\n        return;\n    }\n\n    struct Node *curr = head, *prev = NULL;\n\n    // If head needs to be deleted\n    if (curr->data == key) {\n        deleteAtBeginning();\n        return;\n    }\n\n    do {\n        prev = curr;\n        curr = curr->next;\n\n        if (curr->data == key) {\n            prev->next = curr->next;\n            free(curr);\n            return;\n        }\n\n    } while (curr != head);\n\n    printf(\"Value not found\\n\");\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T16:32:09.150Z"
+  },
+  {
+    "examId": "496f173d-f8ef-4689-b570-b4df764d8d7b",
+    "examName": "dsaaaa",
+    "subjectCode": "dsaaaa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "how does stacks work",
+        "modelAnswer": "It works on LIFO",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T16:35:24.426Z"
+  },
+  {
+    "examId": "68e73eac-794b-4c59-9d6b-12bea9de4d1a",
+    "examName": "natesting",
+    "subjectCode": "na-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "voltage divider rule",
+        "modelAnswer": "It is used to find the voltage across a resistor when two or more resistors are connected in series\nwith voltage source",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T16:42:50.558Z"
+  },
+  {
+    "examId": "83c9ebea-bb0f-4366-8734-a27121d58a97",
+    "examName": "quedsa",
+    "subjectCode": "dsaque21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "deletion of due",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct node {\n    int data;\n    struct node *next;\n};\n\nstruct node *head = NULL;\n\n// Insert (for testing)\nvoid insert(int value) {\n    struct node *newnode, *temp;\n    newnode = (struct node*)malloc(sizeof(struct node));\n    newnode->data = value;\n    newnode->next = NULL;\n\n    if (head == NULL) {\n        head = newnode;\n    } else {\n        temp = head;\n        while (temp->next != NULL)\n            temp = temp->next;\n        temp->next = newnode;\n    }\n}\n\n// Delete first node\nvoid deleteFirst() {\n    struct node *temp;\n\n    if (head == NULL) {\n        printf(\"List is empty\\n\");\n        return;\n    }\n\n    temp = head;\n    head = head->next;\n    free(temp);\n    printf(\"First node deleted\\n\");\n}\n\n// Delete last node\nvoid deleteLast() {\n    struct node *temp, *prev;\n\n    if (head == NULL) {\n        printf(\"List is empty\\n\");\n        return;\n    }\n\n    if (head->next == NULL) {\n        free(head);\n        head = NULL;\n        printf(\"Last node deleted\\n\");\n        return;\n    }\n\n    temp = head;\n    while (temp->next != NULL) {\n        prev = temp;\n        temp = temp->next;\n    }\n\n    prev->next = NULL;\n    free(temp);\n    printf(\"Last node deleted\\n\");\n}\n\nint main() {\n    insert(10);\n    insert(20);\n    insert(30);\n\n    deleteFirst();  // deletes 10\n    deleteLast();   // deletes 30\n\n    return 0;\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T16:48:44.651Z"
+  },
+  {
+    "examId": "98dbcb1f-3e5a-46b9-88e0-c1065bb91ed2",
+    "examName": "test",
+    "subjectCode": "testing21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "insertion",
+        "modelAnswer": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct node {\n    int data;\n    struct node *next;\n} *first, *last;\n\nvoid insert(int pos, int value);\n\nint main() {\n    int pos, value;\n\n    first = last = NULL;\n\n    printf(\"Enter the value of position and value:\\n\");\n    scanf(\"%d %d\", &pos, &value);\n\n    insert(pos, value);\n\n    return 0;\n}\n\nvoid insert(int pos, int value) {\n    struct node *p, *t;\n\n    p = (struct node*)malloc(sizeof(struct node));\n    p->data = value;\n    p->next = NULL;\n\n    // Edge case: insert at beginning\n    if (pos == 0) {\n        if (first == NULL) {\n            first = last = p;\n        } else {\n            p->next = first;\n            first = p;\n        }\n    }\n    else {\n        t = first;\n\n        // Traverse to (pos-1)th node\n        for (int i = 1; i < pos - 1; i++) {\n            t = t->next;\n        }\n\n        p->next = t->next;\n        t->next = p;\n    }\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T17:13:26.553Z"
+  },
+  {
+    "examId": "e2ef0335-b668-4ba7-a070-37e7e8c694b4",
+    "examName": "queibnsertion",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "que insertion array based",
+        "modelAnswer": "#include <stdio.h>\n#define MAX 5\n\nint queue[MAX];\nint front = -1, rear = -1;\n\n// Insertion (Enqueue) - Array based Queue\nvoid insert(int value) {\n    if (rear == MAX - 1) {\n        printf(\"Queue Overflow\\n\");\n        return;\n    }\n\n    if (front == -1)\n        front = 0;\n\n    rear = rear + 1;\n    queue[rear] = value;\n}\n\nint main() {\n    insert(10);\n    insert(20);\n    insert(30);\n    return 0;\n}\n",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-20T17:54:23.885Z"
+  },
+  {
+    "examId": "12992732-1ac6-41ee-9252-2b85191c2769",
+    "examName": "disque",
+    "subjectCode": "disque-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "display code for array based que",
+        "modelAnswer": "void display() {\n    for (int i = front; i <= rear; i++) {\n        printf(\"%d \", queue[i]);\n    }\n}",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-21T01:36:52.818Z"
+  },
+  {
+    "examId": "a8605f31-f14b-43ca-9799-ce118c8f5541",
+    "examName": "aec testing",
+    "subjectCode": "aec-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "What is an active load? Discuss its role in differential amplifiers.",
+        "modelAnswer": "-",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-22T02:35:26.313Z"
+  },
+  {
+    "examId": "fe1a8008-51bf-403e-8c5f-43eb36516aa4",
+    "examName": "aec",
+    "subjectCode": "aec-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "Design a square wave generator o f 100 H z with 50% duty cycle using op-amp.",
+        "modelAnswer": "-",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-02-22T02:38:06.271Z"
+  },
+  {
+    "examId": "1a2446e9-ef14-4d22-aeac-49ec34652be3",
+    "examName": "dsa",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "how does stack work",
+        "modelAnswer": "stack works on lifo",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-02-25T14:52:24.012Z"
+  },
+  {
+    "examId": "36a5f5dd-b2df-402a-ace3-71a3178b67af",
+    "examName": "clang",
+    "subjectCode": "clang-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "find the factorial of a number using for loop",
+        "modelAnswer": "none",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-03-06T06:34:14.186Z"
+  },
+  {
+    "examId": "8ea32e3d-d9d8-4a28-8fc9-fde1421f9218",
+    "examName": "clangg",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "write the block diagram describe the working of the computer",
+        "modelAnswer": "none",
+        "maxMarks": 5
+      }
+    ],
+    "createdAt": "2026-03-06T16:21:39.924Z"
+  },
+  {
+    "examId": "579a468f-0c66-4d55-a172-f2e1d5026f88",
+    "examName": "clnaguage",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "area calculation if circle and circumference ",
+        "modelAnswer": "none",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-03-06T16:56:30.563Z"
+  },
+  {
+    "examId": "be38689b-5d80-4835-8ecf-baca46d243f9",
+    "examName": "clanguage",
+    "subjectCode": "070",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "finding area and circumference ",
+        "modelAnswer": "none",
+        "maxMarks": 3
+      }
+    ],
+    "createdAt": "2026-03-06T16:57:32.993Z"
+  },
+  {
+    "examId": "94dd5857-66dc-4af7-a8cf-38ea0dcbe2d1",
+    "examName": "dsa21",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "describe the c operators with illustrative examples",
+        "modelAnswer": "none",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-03-13T14:35:10.307Z"
+  },
+  {
+    "examId": "c388dae6-2a87-4718-b388-497546d8bdd0",
+    "examName": "dsa",
+    "subjectCode": "21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "c program to check whether the given number is even or odd",
+        "modelAnswer": "**Model Answer:**\n\n1.  **Problem Understanding:** The task requires a C program to determine if a given integer is even or odd.  An even number is divisible by 2 with no remainder, while an odd number leaves a remainder of 1 when divided by 2.\n\n2.  **Input:** The program should accept an integer as input.  It’s crucial to handle integer input correctly, considering potential issues like negative numbers.\n\n3.  **Modulo Operator (%):** The core of the solution lies in the modulo operator (`%`).  The modulo operator returns the remainder of a division.  `number % 2` will yield 0 if the number is even and 1 if the number is odd.\n\n4.  **Conditional Statement (if-else):** A conditional statement (`if-else`) is necessary to evaluate the result of the modulo operation.\n\n5.  **Output:** The program must print a clear message indicating whether the input number is \"Even\" or \"Odd\".  The output should be user-friendly.\n\n6.  **Complete C Code Structure:**\n\n```c\n#include <stdio.h>\n\nint main() {\n    int number;\n\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &number);\n\n    if (number % 2 == 0) {\n        printf(\"%d is Even\\n\", number);\n    } else {\n        printf(\"%d is Odd\\n\", number);\n    }\n\n    return 0;\n}\n```\n\n7.  **Key Considerations & Error Handling (Implicit):**\n    *   **Data Type:**  Using `int` is appropriate for this task.\n    *   **Input Validation (For a more robust solution – not strictly required for a basic exam):** While not explicitly required in a simple exam, production code should ideally include checks to ensure the input is actually an integer and handles potential overflow conditions, though this adds complexity.\n\n8.  **Logical Flow:** The program should first get the input number.  Then, it uses the modulo operator to calculate the remainder when dividing by 2. Finally, it uses an `if-else` statement to interpret the result and print the correct output.\n\n9.  **Test Cases:**  The code should be tested with various inputs, including positive even numbers, positive odd numbers, negative even numbers, and negative odd numbers to ensure its correctness.",
+        "maxMarks": 5
+      }
+    ],
+    "createdAt": "2026-03-23T16:48:23.254Z"
+  },
+  {
+    "examId": "5d9d7a39-0ff6-444a-abcb-7a594de5a8d0",
+    "examName": "dsa",
+    "subjectCode": "2122",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "c program for to find the area and circumference of the circle",
+        "modelAnswer": "**Model Answer:**\n\n1.  **Problem Decomposition:** The task requires calculating the area and circumference of a circle given its radius.  This involves two distinct mathematical formulas:\n    *   Area:  πr² (where π is approximately 3.14159 and r is the radius)\n    *   Circumference: 2πr\n\n2.  **Code Structure & Variable Declaration:** The C program must include:\n    *   A header file (e.g., `stdio.h`) for input/output functions like `printf` and `scanf`.\n    *   A floating-point variable to store the radius (e.g., `float radius;`). Using `float` is crucial to accurately represent the potentially non-integer radius value.\n    *   Variables for storing calculated area and circumference (e.g., `float area, circumference;`).\n\n3.  **Input:** The program must prompt the user to enter the radius of the circle.  `scanf` should be used to read the input from the user, storing it in the `radius` variable.  Error handling (checking for non-numeric input or negative radii) is *strongly* recommended, though not explicitly required for a full mark answer, demonstrating awareness of potential issues is valuable.\n\n4.  **Calculations:**\n    *   Calculate the area: `area = 3.14159 * radius * radius;` (or use `M_PI` from `math.h` for a more precise value of π – noting this is a better practice).\n    *   Calculate the circumference: `circumference = 2 * 3.14159 * radius;` (or `2 * M_PI * radius;`)\n\n5.  **Output:** The program must display the calculated area and circumference, formatted appropriately.  `printf` should be used to output the results to the console.  Clearly label the output (e.g., \"Area: \", \"Circumference: \").\n\n6.  **Code Example (Illustrative – full implementation required):**\n\n```c\n#include <stdio.h>\n#include <math.h> //For M_PI\n\nint main() {\n  float radius, area, circumference;\n\n  printf(\"Enter the radius of the circle: \");\n  scanf(\"%f\", &radius);\n\n  area = M_PI * radius * radius;\n  circumference = 2 * M_PI * radius;\n\n  printf(\"Area: %f\\n\", area);\n  printf(\"Circumference: %f\\n\", circumference);\n\n  return 0;\n}\n```\n\n7.  **Important Considerations (For Demonstrating Understanding):**\n    *   **Units:** The program should ideally prompt for and include units in the output (e.g., \"Area: 28.2743 cm²\").  (Not strictly part of the calculation itself, but demonstrates a complete solution).\n    *   **Precision:** The choice of `float` is appropriate, but discussions about the limitations of floating-point arithmetic and potential rounding errors could be included for a more advanced response.\n    *   **Error Handling:** Briefly mentioning the need to validate input to prevent crashes due to invalid input (e.g., negative radii) would be a plus.\n\n8.  **Testing:** The solution should be tested with various radius values, including positive, zero, and (if error handling is implemented) negative values, to verify its correctness.",
+        "maxMarks": 5
+      }
+    ],
+    "createdAt": "2026-03-23T16:53:23.185Z"
+  },
+  {
+    "examId": "c75dcd49-d96e-4709-8830-4260bd4839f8",
+    "examName": "internals",
+    "subjectCode": "c-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "nothing",
+        "modelAnswer": "nothing",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-04-15T15:42:10.717Z"
+  },
+  {
+    "examId": "c6924e68-e044-4822-9bfe-f753a9ca43cc",
+    "examName": "internals clang",
+    "subjectCode": "clang - 21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "c code for area and circumference of the circle",
+        "modelAnswer": "#include<stdio.h>\n\nfloat PI = 3.14;\n\nint main(){\n   float radius, ci;\n\n   printf(\"\\nEnter the radius of Circle : \");\n   scanf(\"%f\", &radius);\n\n   ci = 2 * PI * radius;\n   \n   printf(\"\\nCircumference of Circle : %f\", ci);\n\n   return (0);\n}",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-04-15T15:55:35.306Z"
+  },
+  {
+    "examId": "fbbd710e-d182-4017-9eaf-cd916fb9329f",
+    "examName": "intr",
+    "subjectCode": "c-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "sum of even numbers from a set of natural numbers",
+        "modelAnswer": "#include <stdio.h>\n\nint main() {\n    int n, i, sum = 0;\n\n    // Input the upper limit from the user\n    printf(\"Enter the limit (N): \");\n    scanf(\"%d\", &n);\n\n    // Loop through numbers from 1 to N\n    for(i = 1; i <= n; i++) {\n        // Check if the number is even\n        if(i % 2 == 0) {\n            sum += i; // Add even number to sum\n        }\n    }\n\n    printf(\"Sum of even natural numbers up to %d is: %d\\n\", n, sum);\n\n    return 0;\n}\n",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-04-15T16:02:49.506Z"
+  },
+  {
+    "examId": "faddee25-56c7-4a20-8ed7-4489841386ff",
+    "examName": "i",
+    "subjectCode": "cklang-070",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "sum of even numbers",
+        "modelAnswer": "#include <stdio.h>\n\nint main() {\n    int n, i, sum = 0;\n\n    // Input the upper limit from the user\n    printf(\"Enter the limit (N): \");\n    scanf(\"%d\", &n);\n\n    // Loop through numbers from 1 to N\n    for(i = 1; i <= n; i++) {\n        // Check if the number is even\n        if(i % 2 == 0) {\n            sum += i; // Add even number to sum\n        }\n    }\n\n    printf(\"Sum of even natural numbers up to %d is: %d\\n\", n, sum);\n\n    return 0;\n}\n",
+        "maxMarks": 6
+      }
+    ],
+    "createdAt": "2026-04-15T16:42:50.396Z"
+  },
+  {
+    "examId": "1e3788da-f023-449a-bb2b-b1c860ced98f",
+    "examName": "test",
+    "subjectCode": "clang-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "block diagram of computer",
+        "modelAnswer": "A block diagram of a computer system visually represents the primary functional units and how data flows between them. It typically includes the Input Unit, the Central Processing Unit (CPU)—which contains the Arithmetic Logic Unit (ALU) and Control Unit (CU)—the Memory Unit, and the Output Unit. \nBrainly.in\nBrainly.in\n +2\nKey Functional Blocks\nInput Unit: This unit acts as the interface between the user and the computer, taking raw data and instructions through devices like keyboards or mice and converting them into a binary format the computer can process.\nCentral Processing Unit (CPU): Known as the \"brain\" of the computer, the CPU coordinates and executes all operations. It consists of two sub-units:\nControl Unit (CU): It acts like a central nervous system, managing and synchronizing the flow of data between the other units and ensuring instructions are executed in the correct order.\nArithmetic Logic Unit (ALU): This unit performs all mathematical calculations (like addition and multiplication) and logical comparisons (like determining if one number is greater than another).\nMemory Unit: This unit stores data and instructions both before and after processing. It is usually split into Primary Memory (RAM) for temporary, high-speed access during tasks and Secondary Storage (like Hard Drives) for permanent data retention.\nOutput Unit: The final stage of the process, this unit takes the binary results from the CPU and converts them back into a human-readable format, such as text on a monitor or a printed document. \nBrainly.in\nBrainly.in\n +9\n",
+        "maxMarks": 5
+      }
+    ],
+    "createdAt": "2026-04-15T17:11:10.318Z"
+  },
+  {
+    "examId": "549dd0c8-6d76-4862-ab87-0878a38b4ccb",
+    "examName": "dsa",
+    "subjectCode": "dsa-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "what is fifo",
+        "modelAnswer": "first in first out",
+        "maxMarks": 10
+      }
+    ],
+    "createdAt": "2026-04-18T15:47:58.351Z"
+  },
+  {
+    "examId": "0f778502-f638-4265-82b2-599719434980",
+    "examName": "c alnguage",
+    "subjectCode": "c-21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "what is c language",
+        "modelAnswer": "it is a language",
+        "maxMarks": 5,
+        "subQuestions": [
+          {
+            "subQuestionLabel": "a",
+            "questionText": "who invented c language",
+            "modelAnswer": "a person",
+            "maxMarks": 5
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-04-18T16:11:59.421Z"
+  },
+  {
+    "examId": "db497586-16ab-4de1-979a-0fa77f764e79",
+    "examName": "introduction to C programming",
+    "subjectCode": "plc21",
+    "questions": [
+      {
+        "questionNumber": "1",
+        "questionText": "basics of c language",
+        "modelAnswer": "",
+        "maxMarks": 20,
+        "subQuestions": [
+          {
+            "subQuestionLabel": "a",
+            "questionText": "with neat block diagram describe the working of computer",
+            "modelAnswer": "**Model Answer: Computer Operation – Examination Standard**\n\nA computer’s operation fundamentally involves the processing of data according to a defined set of instructions.  A comprehensive understanding requires addressing the following key components and their interactions.  Full marks will be awarded for a response demonstrating mastery of these points, supported by a clear and accurate block diagram.\n\n**I. Core Components & Block Diagram (Essential)**\n\nThe block diagram must clearly delineate the following primary components:\n\n*   **Input Devices:** (e.g., Keyboard, Mouse, Scanner) – These devices translate external information into a format the computer can understand (digital signals).\n*   **Central Processing Unit (CPU):** This is the \"brain\" of the computer.  It is further divided into:\n    *   **Arithmetic Logic Unit (ALU):** Performs arithmetic and logical operations on data.\n    *   **Control Unit (CU):** Controls the flow of data and instructions within the CPU, orchestrating the ALU’s operations.\n*   **Memory (RAM):** Random Access Memory – Volatile storage used for holding data and instructions currently being used by the CPU.  Crucially, it’s a *working* memory.\n*   **Storage Devices:** (e.g., Hard Disk Drive (HDD), Solid State Drive (SSD)) – Non-volatile storage used for permanent storage of data and programs.\n*   **Output Devices:** (e.g., Monitor, Printer, Speakers) – These devices translate processed data back into a human-understandable format.\n\n**Diagrammatic Representation:**  The block diagram should clearly illustrate the unidirectional flow of data/instructions: Input Devices → CPU → RAM → (Storage Device) → Output Devices. Arrows should indicate the direction of flow.\n\n**II. Operational Stages (Detailed Explanation – Critical for Full Marks)**\n\nA computer’s operation is characterized by a series of overlapping stages within the CPU. These stages are:\n\n1.  **Fetch:** The Control Unit retrieves the next instruction from RAM. The address of the next instruction is determined by the Program Counter.\n2.  **Decode:** The Control Unit interprets the instruction, determining the operation to be performed and the operands (data) involved.\n3.  **Execute:** The ALU performs the operation specified by the decoded instruction, using the operands.\n4.  **Store:** The results of the execution are stored back into RAM, typically in a register or in a designated memory location.\n\nThis cycle is known as the *Instruction Cycle* or *Fetch-Decode-Execute Cycle*.  It repeats continuously as the computer executes programs.  Modern CPUs utilize pipelining to overlap these stages, increasing efficiency.\n\n**III. Data Representation (Briefly Mentioned – Demonstrate Awareness)**\n\n*   Data is ultimately represented as binary digits (bits: 0 and 1).\n*   Bytes (8 bits) are the fundamental unit of data.\n*   Different data types (integers, floating-point numbers, characters) require different binary representations and are handled by the CPU.\n\n**IV. Accuracy & Clarity (Important)**\n\n*   Diagram must be neat, labelled clearly, and accurately represent the components and their relationships.\n*   Explanations must be precise, unambiguous, and demonstrate a solid understanding of computer architecture.\n*   Avoid vague statements.  Use technical terminology correctly.\n\n**Marking Criteria:**\n\n*   Diagram (40%): Accurate representation, clear labelling, correct flow.\n*   Operational Stages (40%): Correct description of the fetch-decode-execute cycle, understanding of pipelining (bonus).\n*   Data Representation (20%): Basic understanding of binary representation and data types.",
+            "maxMarks": 5
+          },
+          {
+            "subQuestionLabel": "b",
+            "questionText": "describe the c operators with illustrative examples",
+            "modelAnswer": "Okay, here’s the model answer, designed to elicit a top mark response.\n\n**Model Answer:**\n\nC operators are special symbols that perform various operations on variables and expressions. They are fundamental to manipulating data within C programs. This response will categorize and illustrate their usage with clear examples.\n\n**1. Arithmetic Operators:** These perform mathematical calculations.\n\n*   **+, -, *, /:**  These operators have standard mathematical meanings.\n    *   `int x = 5 + 3;`  //  x becomes 8 (addition)\n    *   `int y = 10 - 4;`  //  y becomes 6 (subtraction)\n    *   `int z = 2 * 6;`   //  z becomes 12 (multiplication)\n    *   `int w = 15 / 3;`  //  w becomes 5 (division – integer division truncates the decimal)\n\n*   **% (Modulo):** Returns the remainder of a division.\n    *   `int r = 7 % 2;`  //  r becomes 1 (7 divided by 2 has a remainder of 1)\n\n**2. Assignment Operators:** These assign values to variables.\n\n*   **=:** Simple assignment. `int a = 10;`\n*   **+=, -=, *=, /=, %=:** Compound assignment operators combine an arithmetic operation with assignment.\n    *   `int b = 5; b += 3;`  //  b becomes 8 (equivalent to b = b + 3;)\n    *   `int c = 12; c %= 4;` // c becomes 0 (equivalent to c = c % 4;)\n\n**3. Relational Operators:** These compare values and return a Boolean (true/false) result.\n\n*   **== (Equal to):** Checks if two values are equal. `if (x == 5) { ... }`\n*   **!= (Not equal to):** Checks if two values are not equal. `if (x != 5) { ... }`\n*   **>, <, >=, <=:**  Greater than, less than, greater than or equal to, less than or equal to.  Example: `if (age >= 18) { ... }`\n\n**4. Logical Operators:** These combine or modify Boolean expressions.\n\n*   **&& (Logical AND):**  Returns true if both operands are true. `if (x > 0 && y < 10) { ... }`\n*   **|| (Logical OR):** Returns true if at least one operand is true. `if (x == 5 || y == 10) { ... }`\n*   **! (Logical NOT):**  Negates a Boolean expression. `if (!valid) { ... }`\n\n**5. Increment and Decrement Operators:** These modify the value of a variable by 1.\n\n*   **++ (Increment):**  Increases the value by 1. `int count++;` (pre-increment)\n*   **-- (Decrement):** Decreases the value by 1. `int count--;` (pre-decrement)\n*   **++i, --i:**  Also available as post-increment/decrement which updates the *original* variable after the increment/decrement operation.  e.g., `int i = 5;  int j = ++i;`  (j becomes 6, i becomes 6).\n\n**Important Notes:**\n\n*   Operator precedence dictates the order in which operations are performed.  Refer to C precedence tables for details.\n*   Type compatibility is crucial.  Operators will attempt to perform operations on compatible data types.  Implicit type conversions can occur, and understanding these is vital for avoiding unexpected behavior.\n*   Use parentheses to control the order of operations and improve code readability.  It's best practice to always use them, even if the precedence would otherwise dictate the order.",
+            "maxMarks": 6
+          },
+          {
+            "subQuestionLabel": "c",
+            "questionText": "write a c program to \n1.to find area and circumference of the circle given the radius\n2.check the number is even or odd\n3.to find the addition multiplication division subtraction addition of two numbers",
+            "modelAnswer": "**Model Answer:**\n\n**Overall Structure & Style:**\n\nThe solution must demonstrate a clear understanding of fundamental C programming concepts: input/output, data types (float for area/circumference, int for odd/even checks and arithmetic operations), and the core arithmetic operators. Code must be well-commented to explain logic.  Variable names should be descriptive.  The program should be structured for readability and maintainability.  Error handling (e.g., checking for invalid radius input) is not strictly required for a basic exam answer but would be acknowledged as a good practice.\n\n**Key Points & Code Structure:**\n\n1.  **Include Header:** `#include <stdio.h>` -  This is essential for standard input/output functions like `printf` and `scanf`.\n\n2.  **Function Decomposition (Recommended):**  While not mandatory, breaking the code into functions enhances readability and reusability. Suggested functions: `calculate_circle_properties()`, `check_even_odd()`, `perform_arithmetic()`.\n\n3.  **Circle Area & Circumference:**\n    *   Declare `float` variables for radius (`float radius;`), area, and circumference.\n    *   `scanf(\"%f\", &radius);` – Read the radius from the user.\n    *   Area: `area = 3.14159 * radius * radius;` (Use a suitable approximation for pi).\n    *   Circumference: `circumference = 2 * 3.14159 * radius;`\n    *   `printf(\"Area: %.2f\\n\", area);` – Print the calculated area (formatted to 2 decimal places).\n    *   `printf(\"Circumference: %.2f\\n\", circumference);` – Print the calculated circumference.\n\n4.  **Even/Odd Check:**\n    *   Declare an `int` variable for the number (`int number;`).\n    *   `scanf(\"%d\", &number);` – Read the number from the user.\n    *   `if (number % 2 == 0)` – Check if the remainder when divided by 2 is 0.  If so, the number is even.\n    *   `printf(\"Number is even\\n\");`\n    *   `else` – Otherwise, the number is odd.\n    *   `printf(\"Number is odd\\n\");`\n\n5.  **Arithmetic Operations:**\n    *   Declare `float` variables for the two numbers (`float num1, num2;`).\n    *   `scanf(\"%f %f\", &num1, &num2);` – Read the two numbers.\n    *   Calculate and print the results of addition, multiplication, division, and subtraction.\n    *   `float addition = num1 + num2;`\n    *   `float multiplication = num1 * num2;`\n    *   `float division = num1 / num2;`  (Handle potential division by zero – an explicit check is not required but acknowledge its importance).\n    *   `float subtraction = num1 - num2;`\n    *   `printf(\"Addition: %.2f\\n\", addition);`\n    *   `printf(\"Multiplication: %.2f\\n\", multiplication);`\n    *   `printf(\"Division: %.2f\\n\", division);`\n    *   `printf(\"Subtraction: %.2f\\n\", subtraction);`\n\n6.  **Return Statement (If using functions):** If using functions, include a `return 0;` at the end of the `main` function.\n\n7.  **Comments:**  Include comments to explain the purpose of each section of the code.\n\n**Example (Illustrative Snippet – Not Complete Program):**\n\n```c\n#include <stdio.h>\n\nint main() {\n    float radius, area, circumference;\n    int number, i;\n    float num1, num2, addition, multiplication, division, subtraction;\n\n    // ... (Code for Circle calculations - as detailed above) ...\n\n    // ... (Code for Even/Odd check - as detailed above) ...\n\n    // ... (Code for Arithmetic operations - as detailed above) ...\n    \n    return 0;\n}\n```",
+            "maxMarks": 9
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-04-18T16:44:07.945Z"
+  }
+]
