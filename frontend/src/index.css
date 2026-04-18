@@ -11,6 +11,8 @@
   --text-secondary: #666666;
   --border-primary: #000000;
   --accent: #000000;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --mobile-nav-height: 72px;
 }
 
 @layer base {
@@ -20,48 +22,141 @@
       linear-gradient(to right, #f0f0f0 1px, transparent 1px),
       linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
     background-size: 40px 40px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
   }
 }
 
 @layer components {
   .retro-card {
-    @apply bg-white border-2 border-black p-6 shadow-[8px_8px_0px_0px_#000] transition-all;
+    @apply bg-white border-2 border-black p-6 transition-all;
+    box-shadow: 8px 8px 0px 0px #000;
   }
 
-  .retro-card:hover {
-    @apply shadow-[4px_4px_0px_0px_#000] translate-x-[4px] translate-y-[4px];
+  /* Disable hover shadow shift on touch devices */
+  @media (hover: hover) {
+    .retro-card:hover {
+      @apply translate-x-[4px] translate-y-[4px];
+      box-shadow: 4px 4px 0px 0px #000;
+    }
+  }
+
+  /* Smaller shadow on mobile */
+  @media (max-width: 639px) {
+    .retro-card {
+      @apply p-4;
+      box-shadow: 4px 4px 0px 0px #000;
+    }
   }
 
   .btn-primary {
-    @apply bg-black text-white px-8 py-3 font-bold border-2 border-black hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+    @apply bg-black text-white px-6 py-3 font-bold border-2 border-black transition-all flex items-center justify-center gap-2 active:shadow-none active:translate-x-[2px] active:translate-y-[2px];
+    box-shadow: 4px 4px 0px 0px #000;
+    min-height: 44px; /* Touch target */
+  }
+
+  @media (hover: hover) {
+    .btn-primary:hover {
+      @apply bg-white text-black;
+    }
   }
 
   .btn-secondary {
-    @apply bg-white text-black px-8 py-3 font-bold border-2 border-black hover:bg-black hover:text-white transition-all flex items-center justify-center gap-2 shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+    @apply bg-white text-black px-6 py-3 font-bold border-2 border-black transition-all flex items-center justify-center gap-2 active:shadow-none active:translate-x-[2px] active:translate-y-[2px];
+    box-shadow: 4px 4px 0px 0px #000;
+    min-height: 44px; /* Touch target */
+  }
+
+  @media (hover: hover) {
+    .btn-secondary:hover {
+      @apply bg-black text-white;
+    }
+  }
+
+  /* Mobile: smaller padding on buttons */
+  @media (max-width: 639px) {
+    .btn-primary,
+    .btn-secondary {
+      @apply px-4 py-2.5 text-sm;
+      box-shadow: 3px 3px 0px 0px #000;
+    }
   }
 
   .input-field {
     @apply w-full bg-white border-2 border-black px-4 py-3 font-mono focus:outline-none focus:ring-0 placeholder:text-gray-400;
+    min-height: 44px; /* Touch target */
+    font-size: 16px; /* Prevent iOS zoom on focus */
   }
 
   .sidebar-item {
-    @apply flex items-center gap-4 px-6 py-4 border-b-2 border-black transition-all hover:bg-black hover:text-white cursor-pointer font-bold;
+    @apply flex items-center gap-4 px-6 py-4 border-b-2 border-black transition-all cursor-pointer font-bold;
+    min-height: 44px; /* Touch target */
+  }
+
+  @media (hover: hover) {
+    .sidebar-item:hover {
+      @apply bg-black text-white;
+    }
   }
 
   .sidebar-item-active {
     @apply bg-black text-white;
   }
+
+  /* ─── Mobile Bottom Navigation ─── */
+  .mobile-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-white border-t-4 border-black flex z-50;
+    padding-bottom: var(--safe-bottom);
+  }
+
+  .mobile-nav-item {
+    @apply flex-1 flex flex-col items-center justify-center py-3 gap-1 font-bold text-[9px] uppercase tracking-widest transition-colors;
+    min-height: var(--mobile-nav-height);
+  }
+
+  .mobile-nav-item-active {
+    @apply bg-black text-white;
+  }
+
+  @media (hover: hover) {
+    .mobile-nav-item:hover {
+      @apply bg-gray-100;
+    }
+    .mobile-nav-item-active:hover {
+      @apply bg-black;
+    }
+  }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
+/* Custom Scrollbar — desktop only */
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-white border-l-2 border-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-black border-2 border-black;
+  }
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-white border-l-2 border-black;
+/* ─── Mobile utility: add padding for bottom nav ─── */
+@media (max-width: 1023px) {
+  .mobile-content-padding {
+    padding-bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 16px);
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-black border-2 border-black;
+/* ─── Print styles ─── */
+@media print {
+  .mobile-nav,
+  aside {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
 }

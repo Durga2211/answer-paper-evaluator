@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Plus, Trash2, Save, FileText, CheckCircle2, AlertCircle, Loader2, Sparkles, Upload, X, Image as ImageIcon, ChevronDown, ChevronRight } from 'lucide-react';
+import { Plus, Trash2, Save, FileText, CheckCircle2, AlertCircle, Loader2, Sparkles, Upload, X, Image as ImageIcon, ChevronDown, ChevronRight, Camera } from 'lucide-react';
 
 function CreateExam() {
     const [formData, setFormData] = useState({
@@ -284,71 +284,88 @@ function CreateExam() {
         }
     };
 
-    // ─── Model Answer Upload Button Component ───
+    // ─── Model Answer Upload Button Component (with camera capture for mobile) ───
 
     const ModelAnswerUploadButton = ({ isLoading, onFileChange }) => (
-        <label className={`text-[10px] font-bold uppercase flex items-center gap-2 transition-colors cursor-pointer px-3 py-1.5 border ${isLoading ? 'text-gray-400 border-gray-200 bg-gray-50' : 'text-blue-600 hover:text-blue-800 border-blue-200 bg-blue-50'}`}>
-            <input
-                type="file"
-                className="hidden"
-                onChange={(e) => onFileChange(e.target.files)}
-                accept="image/*"
-                multiple
-                disabled={isLoading}
-            />
-            {isLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Upload className="w-3 h-3" />}
-            {isLoading ? 'Extracting...' : 'Upload Pages'}
-        </label>
+        <div className="flex gap-1.5 sm:gap-2 flex-wrap">
+            {/* Gallery / File upload */}
+            <label className={`text-[10px] font-bold uppercase flex items-center gap-1.5 sm:gap-2 transition-colors cursor-pointer px-2 sm:px-3 py-1.5 border min-h-[36px] ${isLoading ? 'text-gray-400 border-gray-200 bg-gray-50' : 'text-blue-600 active:bg-blue-100 border-blue-200 bg-blue-50'}`}>
+                <input
+                    type="file"
+                    className="hidden"
+                    onChange={(e) => onFileChange(e.target.files)}
+                    accept="image/*"
+                    multiple
+                    disabled={isLoading}
+                />
+                {isLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Upload className="w-3 h-3" />}
+                <span className="hidden sm:inline">{isLoading ? 'Extracting...' : 'Upload'}</span>
+                <span className="sm:hidden">{isLoading ? '...' : 'Upload'}</span>
+            </label>
+            {/* Camera capture — shows on mobile */}
+            <label className={`text-[10px] font-bold uppercase flex items-center gap-1.5 transition-colors cursor-pointer px-2 sm:px-3 py-1.5 border min-h-[36px] ${isLoading ? 'text-gray-400 border-gray-200 bg-gray-50' : 'text-purple-600 active:bg-purple-100 border-purple-200 bg-purple-50'}`}>
+                <input
+                    type="file"
+                    className="hidden"
+                    onChange={(e) => onFileChange(e.target.files)}
+                    accept="image/*"
+                    capture="environment"
+                    disabled={isLoading}
+                />
+                <Camera className="w-3 h-3" />
+                <span className="hidden sm:inline">Camera</span>
+            </label>
+        </div>
     );
 
     // ─── Render ───
 
     return (
-        <div className="space-y-16">
+        <div className="space-y-8 sm:space-y-12 lg:space-y-16">
             {/* Header Section */}
-            <div className="border-b-4 border-black pb-12 flex items-center justify-between">
+            <div className="border-b-4 border-black pb-6 sm:pb-8 lg:pb-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
-                    <h1 className="text-6xl font-black tracking-tighter uppercase mb-2">Configure Exam</h1>
-                    <p className="text-gray-500 font-bold uppercase tracking-widest leading-none">Set dynamic questions, sub-questions & model answers</p>
+                    <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter uppercase mb-1 sm:mb-2">Configure Exam</h1>
+                    <p className="text-gray-500 font-bold uppercase tracking-widest leading-none text-[10px] sm:text-xs">Set dynamic questions, sub-questions & model answers</p>
                 </div>
                 <div className="flex items-center gap-4">
-                    <div className="p-3 bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] flex items-center gap-2">
+                    <div className="p-2 sm:p-3 bg-black text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] flex items-center gap-2">
                         <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
                         System Ready
                     </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
                 <div className="lg:col-span-8">
-                    <form onSubmit={handleSubmit} className="space-y-12">
+                    <form onSubmit={handleSubmit} className="space-y-8 sm:space-y-12">
 
                         {/* Exam Meta Data */}
-                        <div className="retro-card space-y-8">
-                            <h2 className="text-xl font-bold uppercase tracking-tighter mb-6 flex items-center gap-4 border-b-2 border-black pb-4">
+                        <div className="retro-card space-y-6 sm:space-y-8">
+                            <h2 className="text-lg sm:text-xl font-bold uppercase tracking-tighter mb-4 sm:mb-6 flex items-center gap-4 border-b-2 border-black pb-4">
                                 [01] Exam Metadata
                             </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
                                 <div>
-                                    <label className="block text-[10px] font-bold uppercase tracking-widest mb-4">Exam Name</label>
+                                    <label className="block text-[10px] font-bold uppercase tracking-widest mb-3 sm:mb-4">Exam Name</label>
                                     <input
                                         type="text"
                                         name="examName"
                                         value={formData.examName}
                                         onChange={handleExamChange}
-                                        className="input-field text-lg font-bold uppercase"
+                                        className="input-field text-base sm:text-lg font-bold uppercase"
                                         placeholder="E.g. Final Semester"
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[10px] font-bold uppercase tracking-widest mb-4">Subject Code</label>
+                                    <label className="block text-[10px] font-bold uppercase tracking-widest mb-3 sm:mb-4">Subject Code</label>
                                     <input
                                         type="text"
                                         name="subjectCode"
                                         value={formData.subjectCode}
                                         onChange={handleExamChange}
-                                        className="input-field text-lg font-bold uppercase"
+                                        className="input-field text-base sm:text-lg font-bold uppercase"
                                         placeholder="PHY-202"
                                         required
                                     />
@@ -357,11 +374,11 @@ function CreateExam() {
                         </div>
 
                         {/* Dynamic Questions */}
-                        <div className="space-y-8">
-                            <div className="flex items-center justify-between">
-                                <h2 className="text-2xl font-black uppercase tracking-tighter">[02] Question Configuration</h2>
-                                <button type="button" onClick={addQuestion} className="btn-secondary flex items-center gap-2 text-xs">
-                                    <Plus className="w-4 h-4" /> Add Block
+                        <div className="space-y-6 sm:space-y-8">
+                            <div className="flex items-center justify-between gap-4">
+                                <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter">[02] Questions</h2>
+                                <button type="button" onClick={addQuestion} className="btn-secondary flex items-center gap-2 text-xs whitespace-nowrap">
+                                    <Plus className="w-4 h-4" /> <span className="hidden sm:inline">Add Block</span><span className="sm:hidden">Add</span>
                                 </button>
                             </div>
 
@@ -369,28 +386,30 @@ function CreateExam() {
                                 <div key={index} className="retro-card relative bg-gray-50">
                                     {/* Question Header — Collapsible */}
                                     <div
-                                        className="flex items-center justify-between cursor-pointer select-none mb-4"
+                                        className="flex items-center justify-between cursor-pointer select-none mb-3 sm:mb-4 gap-2"
                                         onClick={() => toggleQuestion(index)}
                                     >
-                                        <div className="flex items-center gap-4">
+                                        <div className="flex items-center gap-2 sm:gap-4 min-w-0">
                                             {expandedQuestions[index]
-                                                ? <ChevronDown className="w-5 h-5" />
-                                                : <ChevronRight className="w-5 h-5" />
+                                                ? <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                                                : <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                                             }
-                                            <h3 className="text-sm font-bold uppercase tracking-widest opacity-60">
-                                                Question Block_0{index + 1}
+                                            <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider sm:tracking-widest opacity-60 truncate">
+                                                <span className="hidden sm:inline">Question Block_</span>
+                                                <span className="sm:hidden">Q</span>
+                                                0{index + 1}
                                                 {q.subQuestions.length > 0 && (
-                                                    <span className="ml-4 text-[10px] bg-black text-white px-2 py-0.5 normal-case tracking-normal">
-                                                        {q.subQuestions.length} sub-question{q.subQuestions.length > 1 ? 's' : ''}
+                                                    <span className="ml-2 sm:ml-4 text-[9px] sm:text-[10px] bg-black text-white px-1.5 sm:px-2 py-0.5 normal-case tracking-normal">
+                                                        {q.subQuestions.length} sub-q
                                                     </span>
                                                 )}
-                                                <span className="ml-4 text-[10px] text-gray-400">{q.maxMarks} marks</span>
+                                                <span className="ml-2 sm:ml-4 text-[9px] sm:text-[10px] text-gray-400">{q.maxMarks}m</span>
                                             </h3>
                                         </div>
                                         <button
                                             type="button"
                                             onClick={(e) => { e.stopPropagation(); removeQuestion(index); }}
-                                            className="p-2 hover:bg-black hover:text-white transition-colors border-2 border-transparent hover:border-black"
+                                            className="p-2 active:bg-black active:text-white transition-colors border-2 border-transparent active:border-black flex-shrink-0"
                                             title="Remove Question"
                                         >
                                             <Trash2 className="w-4 h-4" />
@@ -398,37 +417,37 @@ function CreateExam() {
                                     </div>
 
                                     {expandedQuestions[index] && (
-                                        <div className="space-y-6">
+                                        <div className="space-y-5 sm:space-y-6">
                                             {/* Question Number */}
                                             <div>
-                                                <label className="block text-[10px] font-bold uppercase tracking-widest mb-4">Question Number</label>
+                                                <label className="block text-[10px] font-bold uppercase tracking-widest mb-3 sm:mb-4">Question Number</label>
                                                 <input
                                                     type="text"
                                                     value={q.questionNumber}
                                                     onChange={(e) => handleQuestionChange(index, 'questionNumber', e.target.value)}
-                                                    className="input-field text-lg font-bold uppercase w-1/4"
+                                                    className="input-field text-base sm:text-lg font-bold uppercase w-1/3 sm:w-1/4"
                                                     placeholder="Q1"
                                                 />
                                             </div>
 
                                             {/* Question Text */}
                                             <div>
-                                                <label className="block text-[10px] font-bold uppercase tracking-widest mb-4">Question Text</label>
+                                                <label className="block text-[10px] font-bold uppercase tracking-widest mb-3 sm:mb-4">Question Text</label>
                                                 <textarea
                                                     value={q.questionText}
                                                     onChange={(e) => handleQuestionChange(index, 'questionText', e.target.value)}
-                                                    className="input-field min-h-[80px]"
+                                                    className="input-field min-h-[70px] sm:min-h-[80px]"
                                                     placeholder="Enter question..."
                                                 />
                                             </div>
 
                                             {/* Model Answer (only if no sub-questions) */}
                                             {q.subQuestions.length === 0 && (
-                                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                                    <div className="md:col-span-2">
-                                                        <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+                                                <div className="grid grid-cols-1 gap-5 sm:gap-6">
+                                                    <div>
+                                                        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 sm:mb-4 gap-2">
                                                             <label className="block text-[10px] font-bold uppercase tracking-widest">Model Answer</label>
-                                                            <div className="flex gap-2">
+                                                            <div className="flex gap-2 flex-wrap">
                                                                 <ModelAnswerUploadButton
                                                                     isLoading={ocrLoadingIndex === index}
                                                                     onFileChange={(files) => handleModelAnswerUpload(index, files)}
@@ -436,23 +455,24 @@ function CreateExam() {
                                                                 <button
                                                                     type="button"
                                                                     onClick={() => generateModelAnswer(index, q.questionText)}
-                                                                    className="text-[10px] font-bold uppercase flex items-center gap-2 text-emerald-600 hover:text-emerald-800 transition-colors bg-emerald-50 px-3 py-1.5 border border-emerald-200"
+                                                                    className="text-[10px] font-bold uppercase flex items-center gap-1.5 sm:gap-2 text-emerald-600 active:bg-emerald-100 transition-colors bg-emerald-50 px-2 sm:px-3 py-1.5 border border-emerald-200 min-h-[36px]"
                                                                     disabled={generatingIndex === index}
                                                                 >
                                                                     {generatingIndex === index ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
-                                                                    Generate with AI
+                                                                    <span className="hidden sm:inline">Generate with AI</span>
+                                                                    <span className="sm:hidden">AI</span>
                                                                 </button>
                                                             </div>
                                                         </div>
                                                         <textarea
                                                             value={q.modelAnswer}
                                                             onChange={(e) => handleQuestionChange(index, 'modelAnswer', e.target.value)}
-                                                            className="input-field min-h-[100px]"
+                                                            className="input-field min-h-[90px] sm:min-h-[100px]"
                                                             placeholder="Expected key points... (or upload images above)"
                                                         />
                                                     </div>
-                                                    <div>
-                                                        <label className="block text-[10px] font-bold uppercase tracking-widest mb-4">Max Marks</label>
+                                                    <div className="w-full sm:w-1/3">
+                                                        <label className="block text-[10px] font-bold uppercase tracking-widest mb-3 sm:mb-4">Max Marks</label>
                                                         <input
                                                             type="number"
                                                             value={q.maxMarks}
@@ -465,50 +485,50 @@ function CreateExam() {
 
                                             {/* If sub-questions exist, show computed marks */}
                                             {q.subQuestions.length > 0 && (
-                                                <div className="flex items-center gap-4 p-4 bg-black/5 border-2 border-dashed border-black/20">
-                                                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Total Marks (auto-computed from sub-questions):</span>
-                                                    <span className="text-2xl font-black">{q.maxMarks}</span>
+                                                <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-black/5 border-2 border-dashed border-black/20">
+                                                    <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-gray-500">Total Marks (auto):</span>
+                                                    <span className="text-xl sm:text-2xl font-black">{q.maxMarks}</span>
                                                 </div>
                                             )}
 
                                             {/* ═══ Sub-Questions ═══ */}
                                             <div className="space-y-4">
                                                 {q.subQuestions.map((sq, sqIndex) => (
-                                                    <div key={sqIndex} className="ml-8 bg-white border-2 border-black p-5 relative shadow-[4px_4px_0px_0px_#000] transition-all hover:shadow-[2px_2px_0px_0px_#000] hover:translate-x-[2px] hover:translate-y-[2px]">
+                                                    <div key={sqIndex} className="ml-2 sm:ml-8 bg-white border-2 border-black p-3 sm:p-5 relative shadow-[3px_3px_0px_0px_#000] sm:shadow-[4px_4px_0px_0px_#000] transition-all">
                                                         {/* Sub-question header */}
-                                                        <div className="flex items-center justify-between mb-4">
-                                                            <span className="text-xs font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2">
-                                                                <span className="w-6 h-6 bg-black text-white text-[10px] flex items-center justify-center font-black">
+                                                        <div className="flex items-center justify-between mb-3 sm:mb-4 gap-2">
+                                                            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gray-500 flex items-center gap-2 min-w-0">
+                                                                <span className="w-5 h-5 sm:w-6 sm:h-6 bg-black text-white text-[9px] sm:text-[10px] flex items-center justify-center font-black flex-shrink-0">
                                                                     {sq.subQuestionLabel}
                                                                 </span>
-                                                                Sub-Question Q{q.questionNumber}.{sq.subQuestionLabel}
+                                                                <span className="truncate">Q{q.questionNumber}.{sq.subQuestionLabel}</span>
                                                             </span>
                                                             <button
                                                                 type="button"
                                                                 onClick={() => removeSubQuestion(index, sqIndex)}
-                                                                className="p-1 hover:bg-red-500 hover:text-white transition-colors border border-transparent hover:border-red-600"
+                                                                className="p-1.5 active:bg-red-500 active:text-white transition-colors border border-transparent active:border-red-600 flex-shrink-0"
                                                             >
                                                                 <X className="w-3 h-3" />
                                                             </button>
                                                         </div>
 
                                                         {/* Sub-question text */}
-                                                        <div className="mb-4">
+                                                        <div className="mb-3 sm:mb-4">
                                                             <label className="block text-[10px] font-bold uppercase tracking-widest mb-2">Sub-Question Text</label>
                                                             <textarea
                                                                 value={sq.questionText}
                                                                 onChange={(e) => handleSubQuestionChange(index, sqIndex, 'questionText', e.target.value)}
-                                                                className="input-field min-h-[60px] text-sm"
+                                                                className="input-field min-h-[55px] sm:min-h-[60px] text-sm"
                                                                 placeholder={`Enter sub-question ${sq.subQuestionLabel}...`}
                                                             />
                                                         </div>
 
                                                         {/* Sub-question model answer + marks */}
-                                                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                                                            <div className="md:col-span-3">
-                                                                <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
+                                                        <div className="grid grid-cols-1 gap-3 sm:gap-4">
+                                                            <div>
+                                                                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
                                                                     <label className="block text-[10px] font-bold uppercase tracking-widest">Model Answer</label>
-                                                                    <div className="flex gap-2">
+                                                                    <div className="flex gap-1.5 sm:gap-2 flex-wrap">
                                                                         <ModelAnswerUploadButton
                                                                             isLoading={ocrLoadingSubIndex === `${index}-${sqIndex}`}
                                                                             onFileChange={(files) => handleSubModelAnswerUpload(index, sqIndex, files)}
@@ -516,7 +536,7 @@ function CreateExam() {
                                                                         <button
                                                                             type="button"
                                                                             onClick={() => generateSubModelAnswer(index, sqIndex, sq.questionText)}
-                                                                            className="text-[10px] font-bold uppercase flex items-center gap-2 text-emerald-600 hover:text-emerald-800 transition-colors bg-emerald-50 px-2 py-1 border border-emerald-200"
+                                                                            className="text-[10px] font-bold uppercase flex items-center gap-1.5 text-emerald-600 active:bg-emerald-100 transition-colors bg-emerald-50 px-2 py-1 border border-emerald-200 min-h-[36px]"
                                                                             disabled={generatingSubIndex === `${index}-${sqIndex}`}
                                                                         >
                                                                             {generatingSubIndex === `${index}-${sqIndex}` ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
@@ -527,11 +547,11 @@ function CreateExam() {
                                                                 <textarea
                                                                     value={sq.modelAnswer}
                                                                     onChange={(e) => handleSubQuestionChange(index, sqIndex, 'modelAnswer', e.target.value)}
-                                                                    className="input-field min-h-[70px] text-sm"
+                                                                    className="input-field min-h-[60px] sm:min-h-[70px] text-sm"
                                                                     placeholder="Model answer for this sub-question..."
                                                                 />
                                                             </div>
-                                                            <div>
+                                                            <div className="w-1/3 sm:w-1/4">
                                                                 <label className="block text-[10px] font-bold uppercase tracking-widest mb-2">Marks</label>
                                                                 <input
                                                                     type="number"
@@ -548,9 +568,9 @@ function CreateExam() {
                                                 <button
                                                     type="button"
                                                     onClick={() => addSubQuestion(index)}
-                                                    className="ml-8 w-[calc(100%-2rem)] py-3 border-2 border-dashed border-gray-400 font-bold uppercase text-xs hover:bg-black hover:text-white hover:border-black transition-all flex items-center justify-center gap-2 text-gray-500"
+                                                    className="ml-2 sm:ml-8 w-[calc(100%-0.5rem)] sm:w-[calc(100%-2rem)] py-3 border-2 border-dashed border-gray-400 font-bold uppercase text-[10px] sm:text-xs active:bg-black active:text-white active:border-black transition-all flex items-center justify-center gap-2 text-gray-500 min-h-[44px]"
                                                 >
-                                                    <Plus className="w-3 h-3" /> Add Sub-Question (Q{q.questionNumber}.{String.fromCharCode(97 + q.subQuestions.length)})
+                                                    <Plus className="w-3 h-3" /> Add Sub-Q (Q{q.questionNumber}.{String.fromCharCode(97 + q.subQuestions.length)})
                                                 </button>
                                             </div>
                                         </div>
@@ -558,42 +578,41 @@ function CreateExam() {
                                 </div>
                             ))}
 
-                            <button type="button" onClick={addQuestion} className="w-full py-4 border-2 border-dashed border-black font-bold uppercase hover:bg-black hover:text-white transition-all flex items-center justify-center gap-2">
-                                <Plus className="w-4 h-4" /> Append New Question Block
+                            <button type="button" onClick={addQuestion} className="w-full py-3 sm:py-4 border-2 border-dashed border-black font-bold uppercase active:bg-black active:text-white transition-all flex items-center justify-center gap-2 text-sm min-h-[44px]">
+                                <Plus className="w-4 h-4" /> <span className="hidden sm:inline">Append New Question Block</span><span className="sm:hidden">Add Question</span>
                             </button>
                         </div>
 
                         {/* Status Messages & Save */}
-                        <div className="sticky bottom-4 z-10">
-                            <div className="retro-card bg-white p-4 flex items-center justify-between shadow-xl">
-                                <div>
+                        <div className="sticky bottom-0 sm:bottom-4 z-10">
+                            <div className="retro-card bg-white p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 !shadow-[4px_4px_0px_0px_#000] sm:!shadow-xl">
+                                <div className="min-w-0">
                                     {error && (
-                                        <div className="flex items-center gap-2 text-red-600 font-bold text-xs uppercase">
-                                            <AlertCircle className="w-4 h-4" /> {error}
+                                        <div className="flex items-center gap-2 text-red-600 font-bold text-[10px] sm:text-xs uppercase">
+                                            <AlertCircle className="w-4 h-4 flex-shrink-0" /> <span className="truncate">{error}</span>
                                         </div>
                                     )}
                                     {success && (
-                                        <div className="flex items-center gap-2 text-green-600 font-bold text-xs uppercase">
-                                            <CheckCircle2 className="w-4 h-4" /> Saved Successfully
+                                        <div className="flex items-center gap-2 text-green-600 font-bold text-[10px] sm:text-xs uppercase">
+                                            <CheckCircle2 className="w-4 h-4 flex-shrink-0" /> Saved Successfully
                                         </div>
                                     )}
                                 </div>
-                                <div className="flex gap-4">
-                                    <button
-                                        type="submit"
-                                        disabled={loading}
-                                        className="btn-primary"
-                                    >
-                                        {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
-                                        Save Configuration
-                                    </button>
-                                </div>
+                                <button
+                                    type="submit"
+                                    disabled={loading}
+                                    className="btn-primary w-full sm:w-auto"
+                                >
+                                    {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
+                                    Save Configuration
+                                </button>
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <div className="lg:col-span-4 space-y-10">
+                {/* Sidebar Info — hidden on mobile, visible on desktop */}
+                <div className="hidden lg:block lg:col-span-4 space-y-10">
                     <div className="retro-card bg-gray-50 border-dashed">
                         <div className="flex items-center gap-4 mb-6">
                             <FileText className="w-6 h-6" />
@@ -605,6 +624,7 @@ function CreateExam() {
                             <li>You can add infinite question blocks.</li>
                             <li><strong>Sub-questions:</strong> Use them for multi-part questions (Q1.a, Q1.b). Marks auto-sum.</li>
                             <li><strong>Upload Pages:</strong> Upload handwritten model answer images — OCR will extract the text automatically.</li>
+                            <li><strong>Camera:</strong> On mobile, tap the camera button to capture model answer pages directly.</li>
                             <li><strong>AI Generate:</strong> Let Gemma write an ideal model answer for you.</li>
                         </ul>
                     </div>

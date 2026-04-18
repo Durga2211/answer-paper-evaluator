@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [react()],
     server: {
         port: 3000,
+        host: true, // Expose on LAN for mobile testing
         proxy: {
             '/api': {
                 target: 'http://localhost:4000',
