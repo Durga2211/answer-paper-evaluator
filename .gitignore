@@ -14,8 +14,10 @@ __pycache__/
 .idea/
 .DS_Store
 
-# Environment
-.env
+# Environment — keep secrets out of git
+backend/.env
+frontend/.env
+# NOTE: .env.production is committed (contains no secrets, only the public Render URL)
 
 # Project specific
 backend/uploads/

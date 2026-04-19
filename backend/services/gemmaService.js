@@ -1,6 +1,10 @@
 /**
- * Service to handle local inference using Ollama and the Gemma model.
+ * Service to handle inference using Ollama and the configured model.
+ * Uses environment variables for URL and model configuration.
  */
+
+const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'gemma3:4b';
 
 const evaluateFullPaper = async (studentText, questionPaper, modelAnswers) => {
     const prompt = `You are a STRICT university exam evaluator.
@@ -79,11 +83,11 @@ Return ONLY valid JSON matching exactly this schema:
 Ensure the response is valid, parsable JSON without markdown wrapping.`;
 
     try {
-        const response = await fetch('http://localhost:11434/api/generate', {
+        const response = await fetch(`${OLLAMA_URL}/api/generate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemma3:4b',
+                model: OLLAMA_MODEL,
                 prompt: prompt,
                 stream: false,
                 format: 'json'
@@ -135,11 +139,11 @@ ${questionText}
 Return ONLY the raw model answer text. Do NOT wrap it in JSON. Do NOT output markdown code blocks unless necessary for the answer itself. Be direct and concise.`;
 
     try {
-        const response = await fetch('http://localhost:11434/api/generate', {
+        const response = await fetch(`${OLLAMA_URL}/api/generate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemma3:4b',
+                model: OLLAMA_MODEL,
                 prompt: prompt,
                 stream: false
             })
@@ -222,11 +226,11 @@ ${subQuestions && subQuestions.length > 0 ? `Return ONLY valid JSON matching exa
 Ensure the response is valid, parsable JSON without markdown wrapping.`;
 
     try {
-        const response = await fetch('http://localhost:11434/api/generate', {
+        const response = await fetch(`${OLLAMA_URL}/api/generate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                model: 'gemma3:4b',
+                model: OLLAMA_MODEL,
                 prompt: prompt,
                 stream: false,
                 format: 'json'

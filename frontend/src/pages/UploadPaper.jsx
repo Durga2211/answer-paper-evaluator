@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Upload, FileText, CheckCircle2, Loader2, AlertCircle, Layers, Plus, X, BarChart, ChevronDown, ChevronRight, Image as ImageIcon, Camera } from 'lucide-react';
 
 function UploadPaper() {
@@ -17,7 +17,7 @@ function UploadPaper() {
     useEffect(() => {
         const fetchExams = async () => {
             try {
-                const response = await axios.get('/api/exams');
+                const response = await api.get('/api/exams');
                 setExams(response.data);
             } catch (err) {
                 console.error("Failed to load exams", err);
@@ -145,7 +145,7 @@ function UploadPaper() {
         }, 3000);
 
         try {
-            const response = await axios.post('/api/uploads', formData, {
+            const response = await api.post('/api/uploads', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             setResult(response.data);
@@ -153,7 +153,7 @@ function UploadPaper() {
             setUsn('');
             setSelectedExamId('');
         } catch (err) {
-            setError(err.response?.data?.error || 'Fatal Error: Upload Sequence Failed.');
+            setError(err.userMessage || err.response?.data?.error || 'Fatal Error: Upload Sequence Failed.');
         } finally {
             clearInterval(loadingInterval);
             setProgress('');

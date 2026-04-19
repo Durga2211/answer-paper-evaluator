@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Plus, Trash2, Save, FileText, CheckCircle2, AlertCircle, Loader2, Sparkles, Upload, X, Image as ImageIcon, ChevronDown, ChevronRight, Camera } from 'lucide-react';
 
 function CreateExam() {
@@ -135,7 +135,7 @@ function CreateExam() {
         setGeneratingIndex(index);
         setError(null);
         try {
-            const response = await axios.post('/api/generate/model-answer', { questionText });
+            const response = await api.post('/api/generate/model-answer', { questionText });
             if (response.data.modelAnswer) {
                 handleQuestionChange(index, 'modelAnswer', response.data.modelAnswer);
             }
@@ -154,7 +154,7 @@ function CreateExam() {
         setGeneratingSubIndex(`${qIndex}-${sqIndex}`);
         setError(null);
         try {
-            const response = await axios.post('/api/generate/model-answer', { questionText });
+            const response = await api.post('/api/generate/model-answer', { questionText });
             if (response.data.modelAnswer) {
                 handleSubQuestionChange(qIndex, sqIndex, 'modelAnswer', response.data.modelAnswer);
             }
@@ -179,7 +179,7 @@ function CreateExam() {
         });
 
         try {
-            const response = await axios.post('/api/ocr/extract', formDataUpload, {
+            const response = await api.post('/api/ocr/extract', formDataUpload, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             if (response.data.text) {
@@ -208,7 +208,7 @@ function CreateExam() {
         });
 
         try {
-            const response = await axios.post('/api/ocr/extract', formDataUpload, {
+            const response = await api.post('/api/ocr/extract', formDataUpload, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             if (response.data.text) {
@@ -263,7 +263,7 @@ function CreateExam() {
         }
 
         try {
-            await axios.post('/api/exams', formData);
+            await api.post('/api/exams', formData);
             setSuccess(true);
             setFormData({
                 examName: '',

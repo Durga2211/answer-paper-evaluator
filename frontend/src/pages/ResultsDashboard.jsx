@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Download, Edit2, Check, X, Search, ChevronDown, ChevronUp, FileText, User, GraduationCap, Info, ExternalLink, Calendar, Hash, Zap, Sparkles, CheckCircle2, AlertCircle } from 'lucide-react';
 
 function ResultsDashboard() {
@@ -13,7 +13,7 @@ function ResultsDashboard() {
 
     const fetchResults = async () => {
         try {
-            const response = await axios.get('/api/results');
+            const response = await api.get('/api/results');
             setResults(response.data);
         } catch (e) {
             console.error('Connection failure: Records unreachable.');

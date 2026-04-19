@@ -10,6 +10,43 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// ─── CORS Configuration ───
+const allowedOrigins = [
+    'https://answer-paper-evaluator.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:3000',
+];
+
+// Also allow any Vercel preview deployments
+const corsOptions = {
+    origin: function (origin, callback) {
+        // Allow requests with no origin (mobile apps, curl, Postman, etc.)
+        if (!origin) return callback(null, true);
+
+        if (
+            allowedOrigins.includes(origin) ||
+            origin.endsWith('.vercel.app') // Allow all Vercel preview deployments
+        ) {
+            callback(null, true);
+        } else {
+            console.warn(`[CORS] Blocked request from origin: ${origin}`);
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
+};
+
+app.use(cors(corsOptions));
+
+// Handle preflight requests explicitly
+app.options('*', cors(corsOptions));
+
+// ─── Body Parsing ───
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+
 // Ensure data directories exist
 const dataDir = path.join(__dirname, 'data');
 const resultsDir = path.join(__dirname, 'data/results');
@@ -24,11 +61,18 @@ if (!fs.existsSync(examsFile)) {
     fs.writeJsonSync(examsFile, [], { spaces: 2 });
 }
 
-app.use(cors());
-app.use(bodyParser.json());
 app.use('/uploads', express.static(uploadsDir));
 
-// Routes
+// ─── Health Check (for Render cold-start detection) ───
+app.get('/api/health', (req, res) => {
+    res.json({
+        status: 'ok',
+        timestamp: new Date().toISOString(),
+        uptime: process.uptime(),
+    });
+});
+
+// ─── Routes ───
 const examRoutes = require('./routes/exams');
 const uploadRoutes = require('./routes/uploads');
 const resultRoutes = require('./routes/results');
@@ -41,6 +85,15 @@ app.use('/api/results', resultRoutes);
 app.use('/api/generate', generateRoutes);
 app.use('/api/ocr', ocrExtractRoutes);
 
-app.listen(PORT, () => {
-    console.log(`Backend server running at http://localhost:${PORT}`);
+// ─── Global Error Handler ───
+app.use((err, req, res, next) => {
+    console.error('[Server Error]', err.message);
+    res.status(err.status || 500).json({
+        error: err.message || 'Internal Server Error',
+    });
+});
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Backend server running on port ${PORT}`);
+    console.log(`Allowed CORS origins: ${allowedOrigins.join(', ')}`);
 });

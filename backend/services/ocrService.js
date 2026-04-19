@@ -1,8 +1,10 @@
 const { execFile } = require('child_process');
 const path = require('path');
 
+const OCR_SERVICE_URL = process.env.OCR_SERVICE_URL || 'http://127.0.0.1:8000/ocr';
+
 /**
- * Sends images to the Python FastAPI OCR microservice.
+ * Sends images to the OCR microservice.
  * Returns the aggregated extracted text.
  * @param {string[]} imagePaths 
  * @returns {Promise<string>}
@@ -12,7 +14,7 @@ const extractTextFromImages = async (imagePaths) => {
         return '';
     }
 
-    console.log(`[OCR Node] Sending ${imagePaths.length} image(s) to FastAPI OCR microservice...`);
+    console.log(`[OCR Node] Sending ${imagePaths.length} image(s) to OCR service at ${OCR_SERVICE_URL}...`);
     
     let combinedText = '';
 
@@ -21,8 +23,10 @@ const extractTextFromImages = async (imagePaths) => {
             const data = await new Promise((resolve, reject) => {
                 execFile('curl', [
                     '-s', '-X', 'POST',
-                    'http://127.0.0.1:8000/ocr',
-                    '-F', `file=@${imagePath}`
+                    OCR_SERVICE_URL,
+                    '-F', `file=@${imagePath}`,
+                    '--connect-timeout', '30',
+                    '--max-time', '60'
                 ], { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
                     if (error) {
                         return reject(error);
@@ -37,7 +41,7 @@ const extractTextFromImages = async (imagePaths) => {
                 console.log(`[OCR Node] Extracted text length: ${result.text.length}, Confidence: ${result.confidence}`);
             }
         } catch (error) {
-            console.error('[OCR Node] ❌ Failed to process image via OCR microservice request:', error.message);
+            console.error('[OCR Node] ❌ Failed to process image via OCR service:', error.message);
         }
     }
 
