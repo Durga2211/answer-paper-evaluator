@@ -71,5 +71,5 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Backend server running on port ${PORT}`);
-    console.log(`Allowed CORS origins: ${allowedOrigins.join(', ')}`);
+    console.log(`CORS: all origins allowed`);
 });
