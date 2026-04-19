@@ -11,34 +11,13 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // ─── CORS Configuration ───
-const allowedOrigins = [
-    'https://answer-paper-evaluator.vercel.app',
-    'http://localhost:5173',
-    'http://localhost:3000',
-];
-
-// Also allow any Vercel preview deployments
-const corsOptions = {
-    origin: function (origin, callback) {
-        // Allow requests with no origin (mobile apps, curl, Postman, etc.)
-        if (!origin) return callback(null, true);
-
-        if (
-            allowedOrigins.includes(origin) ||
-            origin.endsWith('.vercel.app') // Allow all Vercel preview deployments
-        ) {
-            callback(null, true);
-        } else {
-            console.warn(`[CORS] Blocked request from origin: ${origin}`);
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+// Allow all origins — this is an internal evaluation tool
+app.use(cors({
+    origin: true,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
-};
-
-app.use(cors(corsOptions));
+}));
 
 // ─── Body Parsing ───
 app.use(bodyParser.json({ limit: '50mb' }));
