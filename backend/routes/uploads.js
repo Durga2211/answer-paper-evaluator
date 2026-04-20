@@ -101,7 +101,6 @@ router.post('/', upload.any(), async (req, res) => {
                 console.log(studentText.substring(0, 200) + (studentText.length > 200 ? '...' : ''));
 
                 const questionText = question.questionText || question.title || '';
-                const modelAnswer = question.modelAnswer || 'None provided';
                 const maxMarks = computeMaxMarks(question);
 
                 // Build sub-questions array if present
@@ -113,6 +112,27 @@ router.post('/', upload.any(), async (req, res) => {
                         maxMarks: parseFloat(sq.maxMarks) || 5
                     }))
                     : null;
+
+                // Build model answer — combine parent-level + sub-question model answers
+                let modelAnswer = question.modelAnswer || '';
+
+                // If parent has no model answer but sub-questions do, combine them
+                if (!modelAnswer && subQuestions && subQuestions.length > 0) {
+                    const subAnswers = subQuestions
+                        .filter(sq => sq.modelAnswer && sq.modelAnswer.trim())
+                        .map(sq => `${sq.subQuestionLabel}) ${sq.modelAnswer}`)
+                        .join('\n');
+                    if (subAnswers) {
+                        modelAnswer = subAnswers;
+                    }
+                }
+
+                if (!modelAnswer || modelAnswer.trim().length === 0) {
+                    console.warn(`[Upload] ⚠️ Q${qNum}: No model answer found — evaluation may be inaccurate.`);
+                    modelAnswer = 'No model answer provided. Evaluate based on general correctness and completeness.';
+                } else {
+                    console.log(`[Upload] Q${qNum} Model Answer: ${modelAnswer.substring(0, 100)}${modelAnswer.length > 100 ? '...' : ''}`);
+                }
 
                 // Evaluate this question individually
                 const qResult = await evaluateSingleQuestion(

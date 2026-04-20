@@ -180,17 +180,20 @@ function CreateExam() {
 
         try {
             const response = await api.post('/api/ocr/extract', formDataUpload, {
-                headers: { 'Content-Type': 'multipart/form-data' }
+                headers: { 'Content-Type': 'multipart/form-data' },
+                timeout: 120000, // 2 min for OCR of multiple pages
             });
-            if (response.data.text) {
+            if (response.data.text && response.data.text.trim().length > 0) {
                 const existingAnswer = formData.questions[qIndex].modelAnswer;
                 const newText = existingAnswer
                     ? existingAnswer + '\n\n' + response.data.text
                     : response.data.text;
                 handleQuestionChange(qIndex, 'modelAnswer', newText);
+            } else {
+                setError(`OCR could not extract text from the uploaded image(s) for Q${qIndex + 1}. Try a clearer image or type the model answer manually.`);
             }
         } catch (err) {
-            setError(`Failed to extract text from model answer images (Q${qIndex + 1}).`);
+            setError(err.userMessage || `Failed to extract text from model answer images (Q${qIndex + 1}).`);
         } finally {
             setOcrLoadingIndex(null);
         }
@@ -209,17 +212,20 @@ function CreateExam() {
 
         try {
             const response = await api.post('/api/ocr/extract', formDataUpload, {
-                headers: { 'Content-Type': 'multipart/form-data' }
+                headers: { 'Content-Type': 'multipart/form-data' },
+                timeout: 120000,
             });
-            if (response.data.text) {
+            if (response.data.text && response.data.text.trim().length > 0) {
                 const existingAnswer = formData.questions[qIndex].subQuestions[sqIndex].modelAnswer;
                 const newText = existingAnswer
                     ? existingAnswer + '\n\n' + response.data.text
                     : response.data.text;
                 handleSubQuestionChange(qIndex, sqIndex, 'modelAnswer', newText);
+            } else {
+                setError(`OCR could not extract text from the uploaded sub-question image. Try a clearer image or type manually.`);
             }
         } catch (err) {
-            setError(`Failed to extract text from model answer images.`);
+            setError(err.userMessage || `Failed to extract text from model answer images.`);
         } finally {
             setOcrLoadingSubIndex(null);
         }
